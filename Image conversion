@@ -1,0 +1,35 @@
+# Text–Image to Audio Conversion using OCR 🎤📷
+
+## 📝 Overview
+This project extracts text from images using **OCR (Optical Character Recognition)** and converts it into natural-sounding speech.  
+Built as an accessibility solution for **visually impaired users** and general users who need hands-free reading.
+
+## 🚀 Features
+- Extracts text from any image (PNG, JPG, Scanned documents)
+- Uses **Tesseract OCR** for accurate text recognition
+- Converts text to speech using **gTTS**
+- Supports multiple languages
+- Simple and clean UI (if GUI is used)
+- Saves audio output as `.mp3`
+
+## 🧠 Tech Stack
+- Python  
+- OpenCV  
+- Pytesseract (OCR)  
+- gTTS (Text-to-Speech)  
+
+## 📂 Project Flow
+1. Load Image  
+2. Preprocess (grayscale, thresholding, noise removal)  
+3. Run through OCR  
+4. Convert extracted text → audio  
+5. Save or play audio  
+
+## 📸 Example Output
+- Input: Image of a paragraph  
+- Output: `output_audio.mp3`
+
+## ▶️ How to Run
+```bash
+pip install opencv-python pytesseract gTTS
+python main.py
